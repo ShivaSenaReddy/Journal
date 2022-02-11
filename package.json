@@ -2,7 +2,8 @@
   "name": "project",
   "dependencies": {
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "homepage": " https://shivasenareddy.github.io/Journal/"
   },
   "devDependencies": {
     "webpack": "^2.0",
@@ -13,6 +14,8 @@
   },
   "scripts": {
     "build": "webpack",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
